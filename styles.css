@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+:root {
+  --color-green: #70EB70;
+  --color-green-dark: #323532;
+  --color-black2: #B3B3B3;
+  --color-black-card: #0E0E0E;
+  --color-black-card2: #0e0e0e2a;
+  --color-white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--color-white);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-green), var(--color-green-dark));
+}
+
+#container {
+  margin-top: 1rem;
+  width: 22.5rem;
+  height: 35.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 15px;
+  box-shadow: 0 8px 10px 0 #00000033;
+  background: linear-gradient(135deg, var(--color-black-card), var(--color-black-card2));
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#profile img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin-top: 2rem;
+
+  transition: .4s;
+}
+
+#profile img:hover {
+  transform: scale(1.2);
+}
+
+/* #img-profile {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin-top: 2rem;
+} */
+
+#profile span {
+  margin: 0.2rem 0;
+  color: var(--color-black2);
+
+}
+
+#profile span:first-of-type {
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+#usual-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  
+  margin: 1.2rem 0;
+}
+
+/* #usual-links a */
+.section-link {
+  width: 10.4rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 1.2rem;
+  padding: 0.4rem 0.6rem;
+
+  transition: 0.4s;
+}
+
+.section-link:hover {
+  background: var(--color-black-card2);
+  border-radius: 5px;
+}
+
+hr {
+  width: 100%;
+  border: solid 0.5px var(--color-black2);
+}
+
+hr+span {
+  margin: 0.6rem 0;
+}
+
+#Techs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Techs img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.4rem;
+}
